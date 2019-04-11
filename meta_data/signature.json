@@ -1,0 +1,9 @@
+{
+"signature":
+  {
+    "title": "Signature of the data sample",
+    "description": "The generated signature of the data sample",
+    "type": "string",
+    "pattern": "^.*$"
+  }
+}

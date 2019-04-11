@@ -1,0 +1,60 @@
+{
+  "data":
+  {
+    "title": "The data template 1 for fine blanking machines",
+    "description": "Each data sample has a data json object.",
+    "type": "object",
+    "required":
+    [
+      "serial_number",
+      "material",
+      "punch_force",
+      "punch_stroke",
+      "die_roll"
+    ],
+    "properties":
+    {
+      "serial_number":
+      {
+        "title": "Serial Number of corresponding real part",
+        "type": "string",
+        "description": "Serial Number of the corresponding real part of this digital twin",
+        "pattern": "^(.*)$",
+        "examples": ["partserialnumberhere"]
+      },
+      "material":
+      {
+        "type": "string",
+        "title": "Material",
+        "description": "The material used for the fine blanking part",
+        "examples": [
+          "16MnCr5"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "punch_force": {
+        "type": "string",
+        "title": "The Punch force Schema",
+        "description": "The punch force of the fine blanking part in Newton",
+        "pattern": "^[+-]?([0-9]*[.])?[0-9]+$",
+        "examples": ["5000.000"]
+      },
+      "punch_stroke":
+      {
+        "type": "string",
+        "title": "Punch Stroke",
+        "description": "The Punch Stroke of the fine blanking part in Newton",
+        "pattern": "^[+-]?([0-9]*[.])?[0-9]+$",
+        "examples": ["4000.000"]
+      },
+      "die_roll":
+      {
+        "type": "string",
+        "description": "The die roll of the fine blanking part in mm",
+        "title": "Die roll",
+        "pattern": "^[+-]?([0-9]*[.])?[0-9]+$",
+        "examples": ["3500.000"]
+      }
+    }
+  }
+}
