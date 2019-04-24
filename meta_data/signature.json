@@ -1,9 +1,9 @@
+
 {
-"signature":
-  {
-    "title": "Signature of the data sample",
-    "description": "The generated signature of the data sample",
-    "type": "string",
-    "pattern": "^.*$"
-  }
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "https://raw.githubusercontent.com/Senseering/templates/master/meta_data/signature.json#",
+  "type": "string",
+  "title": "Signature of the data sample",
+  "description": "The generated signature of the data sample",
+  "pattern": "^.*$"
 }

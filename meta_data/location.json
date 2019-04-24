@@ -1,32 +1,31 @@
 {
-  "location":
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "https://raw.githubusercontent.com/Senseering/templates/master/meta_data/location.json#",
+  "type": "object",
+  "title": "Location",
+  "description": "Location of fine blanking machine.",
+  "required": ["latitude", "longitude", "descriptive_location"],
+  "properties":
   {
-    "title": "Location",
-    "type": "object",
-    "description": "Location of fine blanking machine.",
-    "required": ["latitude", "longitude", "descriptive_location"],
-    "properties":
+    "latitude":
     {
-      "latitude":
-      {
-        "title": "Latitude",
-        "description": "Latitude GeoCoordinates from -90 to 90 in degrees",
-        "type": "string",
-        "pattern": "^[-+]?([1-8]?\\d(\\.\\d+)?|90(\\.0+)?)"
-      },
-      "longitude":
-      {
-        "title": "Longitude",
-        "description": "Longitude GeoCoordinates from -180 to 180 in degrees",
-        "type": "string",
-        "pattern": "[-+]?(180(\\.0+)?|((1[0-7]\\d)|([1-9]?\\d))(\\.\\d+)?)$"
-      },
-      "descriptive_location":
-      {
-        "title": "Description of Location",
-        "description": "Description of Location in human words",
-        "type": "string"
-      }
+      "title": "Latitude",
+      "description": "Latitude GeoCoordinates from -90 to 90 in degrees",
+      "type": "string",
+      "pattern": "^[-+]?([1-8]?\\d(\\.\\d+)?|90(\\.0+)?)"
+    },
+    "longitude":
+    {
+      "title": "Longitude",
+      "description": "Longitude GeoCoordinates from -180 to 180 in degrees",
+      "type": "string",
+      "pattern": "[-+]?(180(\\.0+)?|((1[0-7]\\d)|([1-9]?\\d))(\\.\\d+)?)$"
+    },
+    "descriptive_location":
+    {
+      "title": "Description of Location",
+      "description": "Description of Location in human words",
+      "type": "string"
     }
   }
 }

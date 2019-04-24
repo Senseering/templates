@@ -1,39 +1,38 @@
 {
-  "creator":
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "https://raw.githubusercontent.com/Senseering/templates/master/meta_data/creator.json#",
+  "type": "object",
+  "title": "Creator of Data",
+  "description": "Creator of Data provided by Blanking machine. Schema.org/Organization should be used here.",
+  "required": ["name", "url", "email", "telephone"],
+  "properties":
   {
-    "title": "Creator of Data",
-    "type": "object",
-    "description": "Creator of Data provided by Blanking machine. Schema.org/Organization should be used here.",
-    "required": ["name", "url", "email", "telephone"],
-    "properties":
-    {
-        "name":
-        {
-          "title": "Creator Name",
-          "type": "string",
-          "description": "Descriptive Name of Creator of data"
-        },
-        "url":
-        {
-          "title": "URL",
-          "type": "string",
-          "description": "Main URL of creator.",
-          "pattern": "^(?:http(s)?:\/\/)?[\\w.-]+(?:\\.[\\w\\.-]+)+[\\w\\-\\._~:/?#[\\]@!\\$&'\\(\\)\\*\\+,;=.]+$"
-        },
-        "email":
-        {
-          "title": "E-Mail",
-          "type": "string",
-          "description": "Contact-Email of creator.",
-          "pattern": "^[^@]+@[^@]+$"
-        },
-        "telephone":
-        {
-          "title": "Telephone Number",
-          "type": "string",
-          "description": "Contact telephone number of creator.",
-          "pattern": "^[+]?[(]{0,1}[0-9]{1,4}[)]{0,1}[-\\s\\.\/0-9]*$"
-        }
-    }
+      "name":
+      {
+        "title": "Creator Name",
+        "type": "string",
+        "description": "Descriptive Name of Creator of data"
+      },
+      "url":
+      {
+        "title": "URL",
+        "type": "string",
+        "description": "Main URL of creator.",
+        "pattern": "^(?:http(s)?:\/\/)?[\\w.-]+(?:\\.[\\w\\.-]+)+[\\w\\-\\._~:/?#[\\]@!\\$&'\\(\\)\\*\\+,;=.]+$"
+      },
+      "email":
+      {
+        "title": "E-Mail",
+        "type": "string",
+        "description": "Contact-Email of creator.",
+        "pattern": "^[^@]+@[^@]+$"
+      },
+      "telephone":
+      {
+        "title": "Telephone Number",
+        "type": "string",
+        "description": "Contact telephone number of creator.",
+        "pattern": "^[+]?[(]{0,1}[0-9]{1,4}[)]{0,1}[-\\s\\.\/0-9]*$"
+      }
   }
 }
